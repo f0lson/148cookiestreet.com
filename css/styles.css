@@ -1,0 +1,138 @@
+/*FONTS*/
+
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@font-face {
+    font-family: "montserratLight";
+    src: url('../fonts/Montserrat-Light.otf');
+}
+
+@font-face {
+    font-family: "montserratHairline";
+    src: url('../fonts/Montserrat-Hairline.otf');
+}
+
+/*GENERAL STYLES*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+/*HEADER / NAVIGATION STYLES*/
+
+header {
+    background: rgba(164, 14, 76, .9);
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 60px;
+    margin-top: 4px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobileNavContainer {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav li a {
+    display: block;
+    padding: 15px 1em;
+    text-decoration: none;
+    color: #fff;
+    font-family: montserratHairline, "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#menu {
+    display: none;
+}
+
+#i-nav {
+    display: inline-block;
+    content: "";
+    width: 2em;
+    height: 2em;
+    border-radius: 2px;
+    background: rgba(255,255,255,0) url('../img/menu.png') no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    top: 1.01em;
+    right: 0;
+}
+
+/*HERO STYLES*/
+
+.hero{
+    background: #eee url('../img/hero.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 30% 0px;
+    height: 90vh;
+}
+.hero-headline {
+    font-family: "Sacramento", serif;
+    margin: 0;
+    font-size: 5em;
+    line-height: 1.15;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.8);
+}
+
+.hero-btn {
+    background: #A40E4C;
+}
+
+.hero-tagline,
+.hero a {
+    font-family: "montserratLight", sans-serif;
+}
+
+.hero a {
+    display: inline-block;
+/*    border: 1px solid #fff;*/
+    color: #fff;
+
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1.25em;
+    border: none;
+    color: #fff;
+    border-radius: 2px;  
+}
