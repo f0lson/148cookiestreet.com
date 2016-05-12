@@ -19,11 +19,11 @@ $(document).ready(function() {
     } );
     
     //Responsive menu
-    if ( $(window).width() < 754 ) {
-        $menu.css('display', 'flex');
-        
-    } else {
-        // do nothing //
-    }
-    
+//    if ( $(window).width() < 754 ) {
+//        $menu.css('display', 'flex');
+//        
+//    } else {
+//        // do nothing //
+//    }
+//    
 });

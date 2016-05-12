@@ -1,3 +1,12 @@
+/*COLORS
+
+Pink: #D6AABE
+Mint: #76A9A2
+Mayo: #ECD9AD
+Dark Pink: #A26775
+
+**********************************/
+
 /*FONTS*/
 
 @import url(https://fonts.googleapis.com/css?family=Sacramento);
@@ -44,7 +53,7 @@ body {
 /*HEADER / NAVIGATION STYLES*/
 
 header {
-    background: #4CAF50;
+    background: #D6AABE;
     margin: 0;
     width: 100%;
     position: fixed;
@@ -127,14 +136,16 @@ header {
 .hero-headline {
     font-family: montserratHeavy, sans-serif;
     margin: 0;
-    font-size: 5em;
+    font-size: 3.25em;
     line-height: .9;
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
-
+    text-align: left;
 }
 
 .hero-tagline {
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
+    margin: 1.75em 0;
+    text-transform: uppercase;
 }
 
 .hero-tagline,
@@ -145,11 +156,11 @@ header {
 .hero a {
     display: inline-block;
 /*    border: 1px solid #fff;*/
-
+    text-shadow: 2px 2px 3px rgba(0,0,0,.8);
 }
 
 .hero-btn {
-    background: #03A9F4;
+    background: #76A9A2;
     transition: all .4s ease;
 }
 .btn {
@@ -238,6 +249,17 @@ header {
     width: 90px;
     margin-bottom: 12px;
     max-width: 100px;
+    position: relative;
+    
+}
+
+.icon::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: blue;
+    display: inline-block;
+    
 }
 
 
