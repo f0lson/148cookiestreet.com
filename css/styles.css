@@ -157,6 +157,7 @@ header {
     display: inline-block;
 /*    border: 1px solid #fff;*/
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
+    font-size: .85em;
 }
 
 .hero-btn {
@@ -195,9 +196,8 @@ header {
 
 .about-avatar {
     border-radius: 50%;
-    margin-bottom: 8px;
     background: #444;
-    
+    margin: 20px 0;
 }
 
 .main-content p {
@@ -235,7 +235,7 @@ header {
     background: none;
     border: none;
     width: 40%;
-    border-bottom: 2px solid #1B998B;
+    border-bottom: 2px solid #76A9A2;
     padding: 0;
 }
 
@@ -253,14 +253,6 @@ header {
     
 }
 
-.icon::after {
-    content: "";
-    height: 40px;
-    width: 40px;
-    background: blue;
-    display: inline-block;
-    
-}
 
 
 
@@ -268,7 +260,7 @@ header {
 **************************************/
 
 footer {
-    background: tomato;
+    background: #222 url();
     padding: 50px 0 20px;
     color: #fff;
     
