@@ -53,7 +53,7 @@ body {
 /*HEADER / NAVIGATION STYLES*/
 
 header {
-    background: #D6AABE;
+    background: linear-gradient(rgba(214, 155, 181,.95), rgba(214, 170, 190, 0.95) 40%);
     margin: 0;
     width: 100%;
     position: fixed;
@@ -75,10 +75,6 @@ header {
     margin-top: 4px;
     box-shadow: 0 2px 3px rgba(30,30,30,.7);
     transition: all .4s ease;
-}
-
-.logo:hover {
-    transform: rotate(-20deg);
 }
 
 .nav {
@@ -139,25 +135,28 @@ header {
     font-size: 3.25em;
     line-height: .9;
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
-    text-align: left;
 }
 
 .hero-tagline {
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
-    margin: 1.75em 0;
+    margin: 1em 0;
     text-transform: uppercase;
+    font-family: montserratLight;
+    letter-spacing: 1.20px;
 }
 
-.hero-tagline,
-.hero a {
-    font-family: "montserratLight", sans-serif;
+.btn {
+    font-family: "montserratHeavy", sans-serif;
+    font-size: .75em;
+    text-shadow: 0 .5px 1px rgba(40,40,40,.7);
+    letter-spacing: 1.1px;
 }
 
 .hero a {
     display: inline-block;
 /*    border: 1px solid #fff;*/
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
-    font-size: .85em;
+
 }
 
 .hero-btn {
@@ -171,10 +170,40 @@ header {
     color: #fff;
     border-radius: 2px;  
     box-shadow: 0 2px 4px rgba(30,30,30,.6);
+    width: %;
 }
 
-.hero-btn:hover {
-    transform: scale(1.05);
+/*
+
+GALLERY STYLES (BOTH INDEX & GALLERY PAGES)
+
+*/
+
+.galleryIndex {
+    background-image: linear-gradient(rgba(255,255,255,0) 0%, #76a9A2), url('../img/hero.jpg');
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.galleryIndex h2 {
+    font-size: 1.85em;
+    font-family: 'montserratHeavy', sans-serif;
+    text-shadow: 0 2px 3px rgba(0,0,0,.5);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.galleryIndex p {
+    font-family: 'montserratLight', sans-serif;
+    
+}
+
+.gallery-index-btn {
+    background: #D6AABE;
 }
 
 

@@ -3,6 +3,8 @@ $(document).ready(function() {
     // Create Variables
     var $menu = $('#menu');
     var $iNav = $('#i-nav');
+    var $window = $(window);
+    
     
     //Click on the menu icon aka $iNav
     $iNav.click( function(event) {
@@ -18,12 +20,15 @@ $(document).ready(function() {
         event.preventDefault();
     } );
     
-    //Responsive menu
-//    if ( $(window).width() < 754 ) {
-//        $menu.css('display', 'flex');
-//        
-//    } else {
-//        // do nothing //
-//    }
-//    
+    //TEST BROWSER WINDOW WIDTH
+    
+    $window.resize(function() {
+                       
+    });
+    
+    //IF MORE THAN 750px
+    //IF 749 and below
+    
+    
+   
 });
