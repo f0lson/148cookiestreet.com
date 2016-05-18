@@ -9,9 +9,6 @@ Dark Pink: #A26775
 
 /*FONTS*/
 
-@import url(https://fonts.googleapis.com/css?family=Sacramento);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 @font-face {
     font-family: "montserratHeavy";
     src: url('../fonts/Montserrat-Bold.otf');
@@ -32,6 +29,11 @@ Dark Pink: #A26775
     src: url('../fonts/Montserrat-Hairline.otf');
 }
 
+@font-face {
+    font-family: "Bebas Neue Bold";
+    src: url('../fonts/BebasNeue-Bold.otf');
+}
+
 /*GENERAL STYLES*/
 
 * {
@@ -49,6 +51,29 @@ body {
     max-width: 1000px;
 }
 
+hr {
+    border: none;
+    margin: 10px 0;
+    padding: 2px;
+    width: 40%;
+}
+
+.hr-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr-turq {
+    background: #76A9A2;
+}
+
+.hr-pink {
+    background: #D6AABE;
+}
+
+.hr-white {
+    background: #fff;
+}
 
 /*HEADER / NAVIGATION STYLES*/
 
@@ -124,17 +149,18 @@ header {
     background-size: cover;
     color: #fff;
     margin: 0;
-    padding: 30vh 0px;
+    padding: 25vh 0px;
     height: 100vh;
-    text-align: center;
+    text-align: left;
     transition: all 1s ease;
 }
 .hero-headline {
-    font-family: montserratHeavy, sans-serif;
+    font-family: "Bebas Neue Bold", sans-serif;
     margin: 0;
-    font-size: 3.25em;
-    line-height: .9;
+    font-size: 4.75em;
+    line-height: .8;
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
+    padding-bottom: 8px;
 }
 
 .hero-tagline {
@@ -143,11 +169,12 @@ header {
     text-transform: uppercase;
     font-family: montserratLight;
     letter-spacing: 1.20px;
+    padding: 0 0 8px;
 }
 
 .btn {
     font-family: "montserratHeavy", sans-serif;
-    font-size: .75em;
+    font-size: .7em;
     text-shadow: 0 .5px 1px rgba(40,40,40,.7);
     letter-spacing: 1.1px;
 }
@@ -156,7 +183,8 @@ header {
     display: inline-block;
 /*    border: 1px solid #fff;*/
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
-
+    width: 100%;
+    
 }
 
 .hero-btn {
@@ -170,77 +198,17 @@ header {
     color: #fff;
     border-radius: 2px;  
     box-shadow: 0 2px 4px rgba(30,30,30,.6);
-    width: %;
+    width: 99%;
 }
+
 
 /*
 
-GALLERY STYLES (BOTH INDEX & GALLERY PAGES)
+INDEX -- Secondary Content
 
 */
 
-.galleryIndex {
-    background-image: linear-gradient(rgba(255,255,255,0) 0%, #76a9A2), url('../img/hero.jpg');
-    background-size: cover;
-    padding: 50px 0;
-    color: #fff;
-    text-align: center;
-}
 
-.galleryIndex h2 {
-    font-size: 1.85em;
-    font-family: 'montserratHeavy', sans-serif;
-    text-shadow: 0 2px 3px rgba(0,0,0,.5);
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.galleryIndex p {
-    font-family: 'montserratLight', sans-serif;
-    
-}
-
-.gallery-index-btn {
-    background: #D6AABE;
-}
-
-
-/*HOMEPAGE MAIN CONTENT STYLES*/
-
-.main-content {
-    background: #222;
-    color: #fff;
-    padding: 40px 0    ;
-}
-
-.main-content h2{
-    font-size: 1.85em;
-/*    margin-top: 0;*/
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    font-family: 'montserratHeavy', helvetica, arial, sans-serif;
-}
-
-.about-avatar {
-    border-radius: 50%;
-    background: #444;
-    margin: 20px 0;
-}
-
-.main-content p {
-    font-family: 'montserratLight', helvetica, arial, sans-serif;
-    font-size: 1em;
-    
-}
-
-.index-about h2,
-.index-about p{
-    margin:0;
-}
-
-/*HOMEPAGE SECONDARY CONTENT STYLES*/
 .secondary-content {
     padding: 2em 0;
     color: #222;
@@ -248,7 +216,6 @@ GALLERY STYLES (BOTH INDEX & GALLERY PAGES)
 }
 
 .col {
-/*    background: dodgerblue;*/
     text-align: center;
     margin-top: 40px;
 }
@@ -278,11 +245,76 @@ GALLERY STYLES (BOTH INDEX & GALLERY PAGES)
     width: 90px;
     margin-bottom: 12px;
     max-width: 100px;
-    position: relative;
     
 }
 
 
+/*
+
+GALLERY STYLES (BOTH INDEX & GALLERY PAGES)
+
+*/
+
+.galleryIndex {
+    background-image: linear-gradient(rgba(255,255,255,0) 0%, rgba(118, 169, 162, 0.95)), url('../img/hero.jpg');
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.galleryIndex h2 {
+    font-size: 1.85em;
+    font-family: 'montserratHeavy', sans-serif;
+    text-shadow: 0 2px 3px rgba(0,0,0,.5);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.galleryIndex p {
+    font-family: 'montserratLight', sans-serif;
+    
+}
+
+.gallery-index-btn {
+    background: #D6AABE;
+}
+
+
+/*HOMEPAGE MAIN CONTENT STYLES*/
+
+.main-content {
+    background: #ecf0f1;
+    color: #222;
+    padding: 40px 0    ;
+}
+
+.main-content h2{
+    font-size: 1.85em;
+/*    margin-top: 0;*/
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-family: 'montserratHeavy', helvetica, arial, sans-serif;
+}
+
+.main-content p {
+    font-family: 'montserratLight', helvetica, arial, sans-serif;
+    font-size: 1em;
+    
+}
+
+.index-about {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.index-about h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 
 
 /*FOOTER STYLES
