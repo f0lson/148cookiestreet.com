@@ -174,7 +174,7 @@ header {
 
 .btn {
     font-family: "montserratHeavy", sans-serif;
-    font-size: .7em;
+    font-size: .6em;
     text-shadow: 0 .5px 1px rgba(40,40,40,.7);
     letter-spacing: 1.1px;
 }
@@ -184,6 +184,7 @@ header {
 /*    border: 1px solid #fff;*/
     text-shadow: 2px 2px 3px rgba(0,0,0,.8);
     width: 100%;
+
     
 }
 
@@ -199,6 +200,7 @@ header {
     border-radius: 2px;  
     box-shadow: 0 2px 4px rgba(30,30,30,.6);
     width: 99%;
+    max-width: 300px;
 }
 
 
@@ -238,7 +240,7 @@ INDEX -- Secondary Content
 .col-copy {
     font-family: montserratLight, "Helvetica", "Arial", sans-serif;
     margin-top: 0;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .icon {
@@ -311,10 +313,20 @@ GALLERY STYLES (BOTH INDEX & GALLERY PAGES)
     z-index: 3;
 }
 
+.about-avatar {
+    border-radius: 50%;
+    border: 2px solid #D6AABE;
+    max-width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 3px rgba(30,30,30,.6);
+    padding: 10px;
+}
+
 .index-about h2 {
     margin-top: 0;
     margin-bottom: 5px;
 }
+
 
 
 /*FOOTER STYLES
